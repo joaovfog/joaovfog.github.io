@@ -1,0 +1,10 @@
+.experiences {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.experiences-title {
+    font-size: 26px;
+    font-weight: 500;
+}

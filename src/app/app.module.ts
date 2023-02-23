@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ProfessionalExperiencesComponent } from './components/professional-experiences/professional-experiences.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     SkillsSectionComponent,
     AboutSectionComponent,
     ProjectsComponent,
+    ProfessionalExperiencesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatToolbarModule, MatGridListModule],
   providers: [],
