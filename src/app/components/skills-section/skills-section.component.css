@@ -1,0 +1,10 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.skills-title {
+    font-size: 26px;
+    font-weight: 500;
+}

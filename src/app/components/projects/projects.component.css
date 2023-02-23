@@ -1,0 +1,10 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.projects-title {
+    font-size: 26px;
+    font-weight: 500;
+}
