@@ -1,4 +1,26 @@
-<div class="experiences">
+<div>
     <span class="experiences-title">EXPERIÊNCIAS PROFISSIONAIS</span>
+    <mat-grid-list cols="2" rowHeight="10rem" gutterSize="1rem">
+        <div *ngFor="let professionalExperience of professionalExperiences" class="professionalExperiences">
+            <mat-grid-tile>
+                <mat-card class="card">
+                    <mat-card-header>
+                        <mat-card-title-group>
+                            <mat-card-title>
+                                {{professionalExperience.title}}
+                            </mat-card-title>
+                            <mat-card-subtitle>
+                                {{professionalExperience.companyName}}, {{professionalExperience.city}} /
+                                {{professionalExperience.state}}
+                            </mat-card-subtitle>
+                            <p class="card-date">{{professionalExperience.date}}</p>
+                        </mat-card-title-group>
+                    </mat-card-header>
+                    <mat-card-content>
+                        {{professionalExperience.description}}
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </div>
+    </mat-grid-list>
 </div>
-

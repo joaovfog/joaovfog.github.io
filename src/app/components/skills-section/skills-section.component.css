@@ -1,10 +1,25 @@
-.skills {
+.skills-title {
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.skills-title {
-    font-size: 26px;
-    font-weight: 500;
+.skill-title {
+    font-size: 16px;
+}
+
+.skills {
+    /* width: 700px; */
+}
+
+.skills-content {
+    padding: 0 100px 0 100px;
+}
+
+.progress-bar {
+    margin-bottom: 15px;
 }

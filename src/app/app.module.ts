@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card'
+import { MatProgressBarModule } from '@angular/material/progress-bar'
 
 import { HeaderComponent } from './components/header/header.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
@@ -24,7 +26,7 @@ import { CoursesComponent } from './components/courses/courses.component';
     ProfessionalExperiencesComponent,
     CoursesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatToolbarModule, MatGridListModule],
+  imports: [BrowserModule, AppRoutingModule, MatToolbarModule, MatGridListModule, MatCardModule, MatProgressBarModule],
   providers: [],
   bootstrap: [AppComponent],
 })
