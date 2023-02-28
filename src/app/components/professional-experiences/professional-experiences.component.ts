@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 export interface ProfessionalExperience {
   title: string;
@@ -15,6 +15,8 @@ export interface ProfessionalExperience {
   styleUrls: ['./professional-experiences.component.css'],
 })
 export class ProfessionalExperiencesComponent {
+  @Input() title: string | undefined;
+
   professionalExperiences: ProfessionalExperience[] = [
     {
       title: 'Desenvolvedor Frontend',

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 export interface Skills {
   title: string;
@@ -11,6 +11,8 @@ export interface Skills {
   styleUrls: ['./skills-section.component.css']
 })
 export class SkillsSectionComponent {
+  @Input() title: string | undefined;
+
   skills: Skills[] = [
     { title: 'HTML', level: '80' },
     { title: 'CSS', level: '80' },

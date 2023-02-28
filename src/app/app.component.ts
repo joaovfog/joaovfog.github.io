@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio-angular';
+  professionalExperiencesTitle = 'EXPERIÊNCIAS PROFISSIONAIS'
+  skillsTitle = 'HABILIDADES'
+  coursesTitle = 'CURSOS'
+  projectsTitle = 'PROJETOS'
 }

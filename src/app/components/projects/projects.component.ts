@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 export interface Project {
   title: string;
@@ -12,6 +12,8 @@ export interface Project {
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent {
+  @Input() title: string | undefined;
+  
   projects: Project[] = [
     {
       title: 'Site Imobiliária',
