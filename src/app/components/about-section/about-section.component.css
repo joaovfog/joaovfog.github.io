@@ -1,18 +1,9 @@
 .image {
-    width: 650px;
-    border-radius: 2%;
+    width: 550px;
 }
 
 .about-text {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.8rem;
-}
-
-.tile1 {
-    /* background: purple; */
-}
-
-.tile2 {
-    /* background: green; */
 }
