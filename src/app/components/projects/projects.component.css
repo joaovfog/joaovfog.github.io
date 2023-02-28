@@ -10,10 +10,11 @@
 
 .card {
     width: 700px;
-    height: 100px;
+    height: 110px;
 }
 
-.card-link {
-    font-size: 14px;
-    margin-top: 6px;
+.like-link-button {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 10px;
 }

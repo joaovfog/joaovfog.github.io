@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//componentes do material design
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card'
-import { MatProgressBarModule } from '@angular/material/progress-bar'
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
+//componentes da aplicacao
 import { HeaderComponent } from './components/header/header.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
@@ -26,7 +30,16 @@ import { CoursesComponent } from './components/courses/courses.component';
     ProfessionalExperiencesComponent,
     CoursesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatToolbarModule, MatGridListModule, MatCardModule, MatProgressBarModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatGridListModule,
+    MatCardModule,
+    MatProgressBarModule,
+    MatButtonModule,
+    MatIconModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

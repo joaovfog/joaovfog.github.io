@@ -9,9 +9,14 @@
                             <mat-card-title>
                                 {{project.title}}
                             </mat-card-title>
-                            <p class="card-link">
-                                <a href="{{project.link}}" target="_blank">Ver mais</a>
-                            </p>
+                            <div class="like-link-button">
+                                <button mat-stroked-button>
+                                    <a href="{{project.link}}" target="_blank">Ver mais</a>
+                                </button>
+                                <button mat-stroked-button color="warn" (click)="handleChange()">
+                                    <mat-icon>favorite</mat-icon>: {{counter}}
+                                </button>
+                            </div>
                         </mat-card-title-group>
                     </mat-card-header>
                     <mat-card-content>
@@ -22,4 +27,3 @@
         </div>
     </mat-grid-list>
 </div>
-
