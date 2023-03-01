@@ -11,6 +11,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 //componentes da aplicacao
 import { HeaderComponent } from './components/header/header.component';
@@ -19,6 +22,7 @@ import { AboutSectionComponent } from './components/about-section/about-section.
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProfessionalExperiencesComponent } from './components/professional-experiences/professional-experiences.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,7 @@ import { CoursesComponent } from './components/courses/courses.component';
     ProjectsComponent,
     ProfessionalExperiencesComponent,
     CoursesComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,8 +44,11 @@ import { CoursesComponent } from './components/courses/courses.component';
     MatProgressBarModule,
     MatButtonModule,
     MatIconModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

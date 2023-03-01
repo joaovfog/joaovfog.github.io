@@ -1,11 +1,37 @@
 <div>
     <span class="skills-title">{{title}}</span>
-    <div class="skills-content">
-        <div *ngFor="let skill of skills" class="skills">
-            <div>
-                <span class="skill-title">{{skill.title}}</span>
-                <mat-progress-bar mode="determinate" value={{skill.level}} class="progress-bar" />
-            </div>
-        </div>
-    </div>
+    <mat-grid-list cols="1" rowHeight="22rem">
+        <mat-grid-tile>
+            <mat-card class="card">
+                <mat-card-header>
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-subtitle>+3 anos</mat-card-subtitle>
+                            <mat-card-title>Experiência com HTML, CSS e JS</mat-card-title>
+                        </mat-list-item>
+                        <mat-divider style="margin: 5px;"></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>3 anos</mat-card-subtitle>
+                            <mat-card-title>Experiência com React</mat-card-title>
+                        </mat-list-item>
+                        <mat-divider style="margin: 5px;"></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>1 ano</mat-card-subtitle>
+                            <mat-card-title>Experiência com Angular</mat-card-title>
+                        </mat-list-item>
+                        <mat-divider style="margin: 5px;"></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>2 anos</mat-card-subtitle>
+                            <mat-card-title>Experiência com Material UI, Bootstrap e Ant Design</mat-card-title>
+                        </mat-list-item>
+                        <mat-divider style="margin: 5px;"></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>1 ano</mat-card-subtitle>
+                            <mat-card-title>Experiência com Tailwind</mat-card-title>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>
