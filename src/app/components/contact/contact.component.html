@@ -1,0 +1,38 @@
+<div>
+  <span class="contact-title">{{ title }}</span>
+  <mat-grid-list cols="1" rowHeight="20rem">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+      <mat-grid-tile>
+        <mat-card class="card">
+          <mat-form-field appearance="fill">
+            <mat-label for="subject_matter">Assunto</mat-label>
+            <input
+              id="subject_matter"
+              formControlName="subject_matter"
+              matInput
+            />
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label for="comment">Conteúdo</mat-label>
+            <input id="comment" formControlName="comment" matInput />
+          </mat-form-field>
+          <div formGroupName="contact" class="contact-formGroup">
+            <mat-form-field>
+              <mat-label for="name">Nome completo</mat-label>
+              <input id="name" formControlName="name" matInput />
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label for="tel">Telefone</mat-label>
+                <input id="tel" formControlName="tel" matInput />
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label for="email">E-mail</mat-label>
+                <input id="email" formControlName="email" matInput placeholder="email@gmail.com" />
+              </mat-form-field>
+          </div>
+          <button mat-stroked-button type="submit">Enviar</button>
+        </mat-card>
+      </mat-grid-tile>
+    </form>
+  </mat-grid-list>
+</div>

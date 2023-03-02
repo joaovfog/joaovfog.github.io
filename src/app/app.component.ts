@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   skillsTitle = 'HABILIDADES';
   coursesTitle = 'CURSOS';
   projectsTitle = 'PROJETOS';
+  contactTitle = 'CONTATO'
 
   constructor(public dialog: MatDialog) {}
 
